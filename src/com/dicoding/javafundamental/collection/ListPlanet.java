@@ -21,5 +21,16 @@ public class ListPlanet {
         planets.add("mars"); // objek lainnya masih bisa terus ditambahkan ke List
 
         System.out.println("list planets awal: ");
+        for (int i = 0; i < planets.size(); i++) { // method size() untuk mendapatkan ukuran List
+            // method get() untuk melihat isi List pada index i
+            System.out.println("\t index-" + i + " = " + planets.get(i));
+        }
+
+        planets.remove("venus"); // method remove() untuk mengeluarkan objek dari List
+
+        System.out.println("List planets akhir.");
+        for (int i = 0; i < planets.size(); i++) {
+            System.out.println("\t index-" + i + " = " + planets.get(i));
+        }
     }
 }
